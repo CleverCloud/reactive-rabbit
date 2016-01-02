@@ -4,7 +4,7 @@ sonatypeSettings
 
 name := "reactive-rabbit"
 
-version := "1.0.3"
+version := "2.0.0"
 
 organization := "io.scalac"
 
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "com.google.code.findbugs" %  "jsr305"                   % "3.0.0",
   "org.scalatest"            %% "scalatest"                % "2.2.4"   % "test", // for TCK
   "org.reactivestreams"      %  "reactive-streams-tck"     % "1.0.0"   % "test",
-  "com.typesafe.akka"        %% "akka-stream-experimental" % "1.0"     % "test"
+  "com.typesafe.akka"        %% "akka-stream-experimental" % "2.0.1"   % "test"
 )
 
 publishMavenStyle := true
