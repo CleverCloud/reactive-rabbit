@@ -36,6 +36,6 @@ class ExchangeSubscriberBlackboxSpec(defaultTimeout: FiniteDuration) extends Sub
     case n                      ⇒ sys.error("n > Int.MaxValue")
   }
 
-  override def createHelperPublisher(elements: Long) = createHelperSource(elements).runWith(Sink.publisher)
+  override def createHelperPublisher(elements: Long) = createHelperSource(elements).runWith(Sink.asPublisher(true))
   override def createElement(element: Int) = message
 }
